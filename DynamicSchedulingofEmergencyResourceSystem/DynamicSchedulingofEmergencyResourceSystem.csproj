@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{632F911D-610F-4D03-B286-FD5FE7F4DFF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicSchedulingofEmergencyResourceSystem</RootNamespace>
+    <AssemblyName>DynamicSchedulingofEmergencyResourceSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataManagement\bin\Debug\DataManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Silver.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DijkstraClass">
+      <HintPath>..\DijkstraClass\bin\Debug\DijkstraClass.dll</HintPath>
+    </Reference>
+    <Reference Include="EmergencyResourceSchedule">
+      <HintPath>..\EmergencyResourceSchedule\bin\Debug\EmergencyResourceSchedule.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.ArcMapUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="FeatureEditor">
+      <HintPath>..\FeatureEditor\bin\Debug\FeatureEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentifyTool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IdentifyTool\bin\Debug\IdentifyTool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PanZoom, Version=1.0.6380.21137, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PanZoom.dll</HintPath>
+    </Reference>
+    <Reference Include="RiverClass">
+      <HintPath>..\RiverClass\bin\Debug\RiverClass.dll</HintPath>
+    </Reference>
+    <Reference Include="SelectCommands, Version=1.0.6380.21088, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SelectCommands.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBarriesTool.cs" />
+    <Compile Include="AttributeTable\AttributeTableFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeTable\AttributeTableFrm.Designer.cs">
+      <DependentUpon>AttributeTableFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeTable\NewFieldFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeTable\NewFieldFrm.Designer.cs">
+      <DependentUpon>NewFieldFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculate2DCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculate2DCA.designer.cs">
+      <DependentUpon>Calculate2DCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDataImport.cs" />
+    <Compile Include="EagleEyeClass.cs" />
+    <Compile Include="EagleEyeMapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EagleEyeMapFrm.Designer.cs">
+      <DependentUpon>EagleEyeMapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDynamicRoutePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDynamicRoutePlan.Designer.cs">
+      <DependentUpon>FrmDynamicRoutePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmergencyDispositionPointInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmergencyDispositionPointInformation.Designer.cs">
+      <DependentUpon>FrmEmergencyDispositionPointInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmergencyVehicleInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmergencyVehicleInformation.Designer.cs">
+      <DependentUpon>FrmEmergencyVehicleInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFirstEmergencyResourceSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFirstEmergencyResourceSchedule.Designer.cs">
+      <DependentUpon>FrmFirstEmergencyResourceSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmergencyResourceSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmergencyResourceSchedule.designer.cs">
+      <DependentUpon>FrmEmergencyResourceSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownStream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownStream.Designer.cs">
+      <DependentUpon>FrmDownStream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocationofEmergencyDisposalSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocationofEmergencyDisposalSpace.Designer.cs">
+      <DependentUpon>FrmLocationofEmergencyDisposalSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPossibleLocationofEmergencyDisposalSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPossibleLocationofEmergencyDisposalSpace.Designer.cs">
+      <DependentUpon>FrmPossibleLocationofEmergencyDisposalSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPollutionWatershed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPollutionWatershed.Designer.cs">
+      <DependentUpon>FrmPollutionWatershed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPossiblePollutionsource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPossiblePollutionsource.Designer.cs">
+      <DependentUpon>FrmPossiblePollutionsource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetEmergencyResourceDemand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetEmergencyResourceDemand.Designer.cs">
+      <DependentUpon>FrmSetEmergencyResourceDemand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpstream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpstream.Designer.cs">
+      <DependentUpon>FrmUpstream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseInitializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapFrm.Designer.cs">
+      <DependentUpon>MapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TOCFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOCFrm.Designer.cs">
+      <DependentUpon>TOCFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\DisplayTool.cs" />
+    <Compile Include="Tool\FlashShapeTool.cs" />
+    <Compile Include="Tool\MapControlTool.cs" />
+    <Compile Include="Tool\MapTools.cs" />
+    <Compile Include="Variable.cs" />
+    <EmbeddedResource Include="AttributeTable\AttributeTableFrm.resx">
+      <DependentUpon>AttributeTableFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeTable\NewFieldFrm.resx">
+      <DependentUpon>NewFieldFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculate2DCA.resx">
+      <DependentUpon>Calculate2DCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EagleEyeMapFrm.resx">
+      <DependentUpon>EagleEyeMapFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDynamicRoutePlan.resx">
+      <DependentUpon>FrmDynamicRoutePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmergencyDispositionPointInformation.resx">
+      <DependentUpon>FrmEmergencyDispositionPointInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmergencyVehicleInformation.resx">
+      <DependentUpon>FrmEmergencyVehicleInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFirstEmergencyResourceSchedule.resx">
+      <DependentUpon>FrmFirstEmergencyResourceSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmergencyResourceSchedule.resx">
+      <DependentUpon>FrmEmergencyResourceSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownStream.resx">
+      <DependentUpon>FrmDownStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocationofEmergencyDisposalSpace.resx">
+      <DependentUpon>FrmLocationofEmergencyDisposalSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPossibleLocationofEmergencyDisposalSpace.resx">
+      <DependentUpon>FrmPossibleLocationofEmergencyDisposalSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPollutionWatershed.resx">
+      <DependentUpon>FrmPollutionWatershed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPossiblePollutionsource.resx">
+      <DependentUpon>FrmPossiblePollutionsource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetEmergencyResourceDemand.resx">
+      <DependentUpon>FrmSetEmergencyResourceDemand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpstream.resx">
+      <DependentUpon>FrmUpstream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapFrm.resx">
+      <DependentUpon>MapFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TOCFrm.resx">
+      <DependentUpon>TOCFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddBarriesTool.bmp" />
+    <EmbeddedResource Include="AddBarriesTool.cur" />
+    <Content Include="Resources\GenericAnalyze16.png" />
+    <Content Include="Resources\GenericOpen16.png" />
+    <Content Include="Resources\GenericSave16.png" />
+    <Content Include="Resources\TableExcel32.png" />
+    <Content Include="Resources\TableOpen32.png" />
+    <Content Include="Resources\TableOpenSelected32.png" />
+    <Content Include="Resources\TableStandalone32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent\Agent.csproj">
+      <Project>{03D7351E-691F-4F46-902D-B3115ED39497}</Project>
+      <Name>Agent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\WinFormsUI.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

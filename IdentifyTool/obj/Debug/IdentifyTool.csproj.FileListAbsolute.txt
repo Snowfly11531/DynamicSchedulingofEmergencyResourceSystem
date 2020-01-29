@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.IdentifyDialog.resources
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\bin\Debug\IdentifyTool.dll
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\bin\Debug\IdentifyTool.pdb
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.dll
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.pdb
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\bin\Debug\IdentifyTool.dll
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\bin\Debug\IdentifyTool.pdb
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\bin\Debug\ESRI.ArcGIS.ADF.dll
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\bin\Debug\ESRI.ArcGIS.ADF.xml
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.IdentifyDialog.resources
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.csproj.GenerateResource.Cache
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.dll
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\IdentifyTool\obj\Debug\IdentifyTool.pdb

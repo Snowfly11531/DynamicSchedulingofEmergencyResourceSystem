@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\bin\Debug\DataManagement.dll
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\bin\Debug\DataManagement.pdb
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\obj\Debug\DataManagement.dll
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\obj\Debug\DataManagement.pdb
+C:\Users\Administrator\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\bin\Debug\DataManagement.dll
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\bin\Debug\DataManagement.pdb
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\bin\Debug\ESRI.ArcGIS.ADF.dll
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\bin\Debug\ESRI.ArcGIS.ADF.xml
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\obj\Debug\DataManagement.csprojResolveAssemblyReference.cache
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\obj\Debug\DataManagement.dll
+C:\Users\wzd\Desktop\突发环境事件应急资源调度系统\DynamicSchedulingofEmergencyResourceSystem\DataManagement\obj\Debug\DataManagement.pdb
